@@ -3,9 +3,14 @@ $(function() {
   
  $('#addit').on('click', function(){
     	var flavor = $('#doughnut-flavor').val();
+    	var style  = $('#doughnut-style').val();
+
     	
     	
     	console.log("doughnut flavor: ", flavor);
+    	console.log("doughnut style: ", style);
+    	$("#doughnuts").append(flavor).promise();
+    	$("#doughnuts").append(style).promise();
     	
 
     	$.ajax({
@@ -16,6 +21,7 @@ $(function() {
     			item: {
 
     				flavor: flavor,
+    				style: style
     				
     			}
 
