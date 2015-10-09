@@ -51,8 +51,28 @@ form input[type=submit]:hover{
   top: -1px;
 }
 
-ul {
+/*ul {
+  list-style-image: url('http://icons.iconarchive.com/icons/icons8/ios7/24/Food-Doughnut-icon.png');
   text-align: left;
   max-width: 300px;
   margin: 2rem auto;
+  
+  
+}*/
+
+
+ul  {
+    list-style:none;
+    margin:0; padding:0;
+    text-align: left;
+    max-width: 300px;
+    margin: 2rem auto;
 }
+
+ul li {
+  margin:0; padding:0;
+  background:url('http://icons.iconarchive.com/icons/icons8/ios7/24/Food-Doughnut-icon.png') no-repeat 0 0;
+  padding-left:24px;  /*// according to your image with*/
+  min-height:24px; /*// according to your image height*/
+}
+

@@ -9,7 +9,7 @@ $("#doughnut-list").click(function(){
 	var flavor = doughnutsObj.flavor;
 	var style = doughnutsObj.style;
 	var yum = document.createElement("li");
-	$(yum).text(flavor + style);
+	$(yum).text(flavor + " "+ style);
 	$("#doughnuts")[0].appendChild(yum);
 	return false;
 });
